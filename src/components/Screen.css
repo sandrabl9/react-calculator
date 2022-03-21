@@ -1,0 +1,18 @@
+.input {
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px 25px;
+    border: 1.5px solid #777;
+    box-shadow: -1px 4px 1px 1px #fff;
+
+
+}

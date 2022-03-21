@@ -1,0 +1,21 @@
+.reset-button {
+    height: 70px;
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 36px;
+    background-color:#d82b15;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 5px 5px 10px #000;
+
+}
+.reset-button:active {
+    transform: scale(.9);
+}
