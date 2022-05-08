@@ -1,5 +1,5 @@
 .container {
-  background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%); ;
+  background: #0B173B;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,21 +8,20 @@
 }
 
 .calculator-container {
-  width: 400px;
-  height: 550px;
+  width: 370px;
+  height: 560px;
   padding: 14px;
-  background-color: #ccf;
-  border-radius: 10px;
-  border: 2px solid #fff;
-  box-shadow: 5px 5px 15px #000;
+  background-color: #A9F5E1;
+  border-radius: 50px;
+  border: 12px solid #A1A9F5;
+  box-shadow: 5px 5px 15px #666;
 
   
 }
 .row {
   margin: 4px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  
-  
+   
 }

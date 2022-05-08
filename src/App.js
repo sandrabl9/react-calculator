@@ -7,6 +7,7 @@ import './App.css';
 import { evaluate } from 'mathjs';
 
 
+
 function App() {
   const [input, setInput] = useState('');
 
@@ -47,20 +48,23 @@ function App() {
       <Button clickHandler={inputHandler}>*</Button>
       </div>
       <div className='row'>
-      <Button clickHandler={result}>=</Button>
+      
       <Button clickHandler={inputHandler}>0</Button>
       <Button clickHandler={inputHandler}>.</Button>
+      <Button clickHandler={inputHandler}>%</Button>
       <Button clickHandler={inputHandler}>/</Button>
+      
       </div>
       <div className='row'>
-      <ResetButton resetHandler={() => setInput('')}>Reset</ResetButton>
-      <DeleteButton deleteHandler={() => setInput(input.slice(0, -1))}>Delete</DeleteButton>
+      <ResetButton resetHandler={() => setInput('')}>AC</ResetButton>
+      <DeleteButton deleteHandler={() => setInput(input.slice(0, -1))}>C</DeleteButton>
+      <Button clickHandler={result}>=</Button>
       </div>
 
     </div>
 
     </div>
   );
-}
+};
 
 export default App;
