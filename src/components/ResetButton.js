@@ -1,13 +1,14 @@
-import React from 'react';
-import './ResetButton.css';
+/* eslint-disable react/prop-types */
+import React from 'react'
+import './ResetButton.css'
 
-const ResetButton = (props)=> {
-    return(
+const ResetButton = (props) => {
+  return (
         <div className='reset-button'
         onClick={props.resetHandler}>
             {props.children}
         </div>
-    );
-};
+  )
+}
 
-export default ResetButton;
+export default ResetButton

@@ -1,20 +1,19 @@
-import React from 'react';
-import './Button.css';
+/* eslint-disable react/prop-types */
+import React from 'react'
+import './Button.css'
 
 const Button = (props) => {
+  const isOperator = operator => {
+    return isNaN(operator) && (operator !== '.') && (operator !== '=')
+  }
 
-    const isOperator = operator => {
-        return isNaN(operator) && (operator !== '.') && (operator !== '=');
-         
-    };
-
-    return(
-        <div 
-        className={`button-container ${isOperator(props.children) ? 'operator':''}`.trimEnd()}
+  return (
+        <div
+        className={`button-container ${isOperator(props.children) ? 'operator' : ''}`.trimEnd()}
         onClick={() => props.clickHandler(props.children)}>
             {props.children}
         </div>
-    );
-};
+  )
+}
 
-export default Button;
+export default Button

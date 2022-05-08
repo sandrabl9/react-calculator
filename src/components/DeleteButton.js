@@ -1,13 +1,14 @@
-import React from 'react';
-import './DeleteButton.css';
+/* eslint-disable react/prop-types */
+import React from 'react'
+import './DeleteButton.css'
 
-const DeleteButton = (props)=> {
-    return(
+const DeleteButton = (props) => {
+  return (
         <div className='delete-button'
         onClick={props.deleteHandler}>
             {props.children}
         </div>
-    );
-};
+  )
+}
 
-export default DeleteButton;
+export default DeleteButton

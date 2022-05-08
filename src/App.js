@@ -1,32 +1,28 @@
-import React, { useState } from 'react';
-import Button from './components/Button';
-import Screen from './components/Screen';
-import ResetButton from './components/ResetButton';
-import DeleteButton from './components/DeleteButton';
-import './App.css';
-import { evaluate } from 'mathjs';
+import React, { useState } from 'react'
+import Button from './components/Button'
+import Screen from './components/Screen'
+import ResetButton from './components/ResetButton'
+import DeleteButton from './components/DeleteButton'
+import './App.css'
+import { evaluate } from 'mathjs'
 
-
-
-function App() {
-  const [input, setInput] = useState('');
+function App () {
+  const [input, setInput] = useState('')
 
   const inputHandler = (val) => {
-    setInput(input + val );
-  };
+    setInput(input + val)
+  }
 
   const result = () => {
     if (input) {
-    setInput(evaluate(input));
+      setInput(evaluate(input))
     } else {
       alert('Please enter values for evaluate')
     }
-  };
-
+  }
 
   return (
     <div className='container'>
-    
     <div className='calculator-container'>
       <Screen input={input}/>
       <div className='row'>
@@ -48,23 +44,19 @@ function App() {
       <Button clickHandler={inputHandler}>*</Button>
       </div>
       <div className='row'>
-      
       <Button clickHandler={inputHandler}>0</Button>
       <Button clickHandler={inputHandler}>.</Button>
       <Button clickHandler={inputHandler}>%</Button>
       <Button clickHandler={inputHandler}>/</Button>
-      
       </div>
       <div className='row'>
       <ResetButton resetHandler={() => setInput('')}>AC</ResetButton>
       <DeleteButton deleteHandler={() => setInput(input.slice(0, -1))}>C</DeleteButton>
       <Button clickHandler={result}>=</Button>
       </div>
-
     </div>
-
     </div>
-  );
+  )
 };
 
-export default App;
+export default App
