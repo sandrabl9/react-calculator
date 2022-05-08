@@ -1,12 +1,13 @@
-import React from 'react';
-import './Screen.css';
+/* eslint-disable react/prop-types */
+import React from 'react'
+import './Screen.css'
 
-const Screen =({input})=> {
-    return(
+const Screen = ({ input }) => {
+  return (
         <div className='input'>
             {input}
         </div>
-    );
-};
+  )
+}
 
-export default Screen;
+export default Screen
